@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b4b2b2;
+    background-size: cover;
+}
+input{
+    display: block;
+    color: white;
+}
+.main{
+    height: 100vh;
+    display: flex;
+
+}
+.child{
+    background-color: rgb(184, 184, 231);
+    height: 440px;
+    width: 400px;
+    margin: auto;
+    border: 2px solid rgb(199, 199, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+h1,p,a{
+    text-align: center;
+
+}
+ .email, .password,.username{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    margin: 15px;
+}
+.btn{
+    height: 30px;
+    width: 300px;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgb(90, 90, 187);
+    font-size: 15px;
+}
+.checkbox{
+    float: left;
+    position: relative;
+    left: -50px;
+}
+
+   
+/*
+$email=$_POST['email'];
+$pass=$_POST['password'];
+ require_once "test.php";
+
+$data="SELECT Email, mdp FROM Utilisateurs Where Email='$email' && mdp='$pass'";
+$excute=mysqli_query($check,$data);
+$count=mysqli_num_rows($excute);
+if($count>=1){
+    session_start();
+    $_SESSION["count"]="yes";
+    header("Location: Acceuil.html ");
+}
+else{
+   /*echo '<script>alert("Invalid credentials")</script>';*/
+   /*header("Location: index.php ");*/
+
+
+
+
+
+
+
+
+
+
